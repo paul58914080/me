@@ -1,3 +1,8 @@
 site_name: Paul WILLIAMS
 theme:
   name: material
+  palette:
+    scheme: slate
+    primary: black
+extra_css:
+  - stylesheets/extra.min.css
