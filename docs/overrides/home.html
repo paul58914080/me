@@ -1,0 +1,142 @@
+{% extends "main.html" %}
+{% block tabs %}
+{{ super() }}
+
+<style>
+  .home-header {
+    padding-top: 3rem;
+    background: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+    padding-bottom: 3rem;
+  }
+
+  .home-header h1 {
+    color: inherit;
+    font-weight: 300;
+    margin-bottom: 0;
+    text-shadow: 0 0 0.2rem #018786;
+  }
+
+  .skills {
+    padding-top: 2rem;
+  }
+
+</style>
+<section class="mdx-container home-header">
+  <div class="md-grid md-typeset">
+    <div class="md-typeset container-fluid">
+      <div>
+        <h1>
+          About me
+        </h1>
+        <h2>
+          I am a software architect and developer with a passion for software quality and
+          maintainability. I have been working in the software industry for over 14 years and have
+          experience in a wide range of technologies and domains. I am a strong advocate for clean
+          code, test-driven development, and continuous integration and delivery. I am also a big
+          fan of open-source software and have contributed to a number of projects over the years to
+          name a few:
+          <ul>
+            <li>
+              <a href="https://github.com/ff4j/ff4j-spring-boot-starter" target="_blank">Feature
+                Flipping 4 Java</a>
+            </li>
+            <li>
+              <a href="https://github.com/devs-from-matrix/hexagonal-spring-boot-kotlin">Scaffolding
+                Hexagonal Architecture</a>
+            </li>
+          </ul>
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mdx-container skills">
+  <div class="md-grid container-fluid">
+    <div class="row md-typeset">
+      <h1 class="mb-1">Skills</h1>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 d-block">
+            <div class="skills-bar">
+              <div class="bar">
+                <div class="info">
+                  <span>Java</span>
+                </div>
+                <div class="progress-line"><span class="java"></span></div>
+                <div class="bar">
+                  <div class="info">
+                    <span>Spring boot</span>
+                  </div>
+                  <div class="progress-line"><span class="spring-boot"></span></div>
+                  <div class="bar">
+                    <div class="info">
+                      <span>Kotlin</span>
+                    </div>
+                    <div class="progress-line"><span class="kotlin"></span></div>
+                    <div class="bar">
+                      <div class="info">
+                        <span>Maven</span>
+                      </div>
+                      <div class="progress-line">
+                        <span class="maven"></span>
+                      </div>
+                      <div class="bar">
+                        <div class="info">
+                          <span>Azure</span>
+                        </div>
+                        <div class="progress-line"><span class="azure"></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 d-block">
+            <div class="skills-bar">
+              <div class="bar">
+                <div class="info">
+                  <span>Typescript</span>
+                </div>
+                <div class="progress-line"><span class="typescript"></span></div>
+                <div class="bar">
+                  <div class="info">
+                    <span>Angular</span>
+                  </div>
+                  <div class="progress-line"><span class="angular"></span></div>
+                  <div class="bar">
+                    <div class="info">
+                      <span>React</span>
+                    </div>
+                    <div class="progress-line"><span class="react"></span></div>
+                    <div class="bar">
+                      <div class="info">
+                        <span>Bootstrap</span>
+                      </div>
+                      <div class="progress-line">
+                        <span class="bootstrap"></span>
+                      </div>
+                      <div class="bar">
+                        <div class="info">
+                          <span>Yarn</span>
+                        </div>
+                        <div class="progress-line"><span class="yarn"></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+{% block content %}{% endblock %}
+{% block footer %}{% endblock %}

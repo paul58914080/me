@@ -1,8 +1,48 @@
 site_name: Paul WILLIAMS
+repo_url: https://github.com/paul58914080/my-notes
+repo_name: paul58914080/my-notes
 theme:
   name: material
   palette:
     scheme: slate
     primary: black
+  language: en
+  custom_dir: docs/overrides
+  features:
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.footer
+    - navigation.tracking
+    - navigation.expand
+    - search.highlight
+    - search.share
+    - search.suggest
 extra_css:
   - stylesheets/extra.min.css
+  - stylesheets/bootstrap-grid.min.css
+  - stylesheets/skills.css
+
+nav:
+  - About me: 'index.md'
+  - Frontend:
+      - Scaffold angular: 'pages/frontend/angular/index.md'
+      - Testing angular: 'pages/frontend/angular/testing/index.md'
+      - RxJS: 'pages/frontend/rxjs/index.md'
+      - Micro frontend: 'pages/frontend/micro-frontend/index.md'
+  - Backend:
+      - Hexagonal architecture: 'pages/backend/hexagonal-architecture/index.md'
+  - DevOps:
+      - Docker: 'pages/devops/docker/index.md'
+      - Jenkins: 'pages/devops/jenkins/index.md'
+  - Mac:
+      - Mac: 'pages/mac/index.md'
+  - Tools:
+      - Git: 'pages/tools/git/index.md'
+      - Markdown: 'pages/tools/markdown/index.md'
+  - Tips & Tricks:
+      - IntelliJ IDEA: 'pages/tips-and-tricks/intellij-idea/index.md'
