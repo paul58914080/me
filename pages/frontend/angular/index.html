@@ -69,6 +69,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#scaffold-base-angular" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -387,9 +392,108 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Scaffold angular
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Scaffold angular
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#scaffold-base-angular" class="md-nav__link">
+    Scaffold base angular
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#angular-eslint" class="md-nav__link">
+    Angular ESLint
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lint-scss" class="md-nav__link">
+    Lint SCSS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lint-html" class="md-nav__link">
+    Lint HTML
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update-ng-lint-script" class="md-nav__link">
+    Update ng lint script
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-all-linters" class="md-nav__link">
+    Run all linters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#format-with-prettier" class="md-nav__link">
+    Format with Prettier
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#format-staged-files" class="md-nav__link">
+    Format staged files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commit-message-linting" class="md-nav__link">
+    Commit message linting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pre-commit-hooks" class="md-nav__link">
+    Pre-commit hooks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mock-server" class="md-nav__link">
+    Mock server
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -730,6 +834,91 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#scaffold-base-angular" class="md-nav__link">
+    Scaffold base angular
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#angular-eslint" class="md-nav__link">
+    Angular ESLint
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lint-scss" class="md-nav__link">
+    Lint SCSS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lint-html" class="md-nav__link">
+    Lint HTML
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update-ng-lint-script" class="md-nav__link">
+    Update ng lint script
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-all-linters" class="md-nav__link">
+    Run all linters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#format-with-prettier" class="md-nav__link">
+    Format with Prettier
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#format-staged-files" class="md-nav__link">
+    Format staged files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commit-message-linting" class="md-nav__link">
+    Commit message linting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pre-commit-hooks" class="md-nav__link">
+    Pre-commit hooks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mock-server" class="md-nav__link">
+    Mock server
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -748,7 +937,192 @@
 
   <h1>Scaffold angular</h1>
 
-
+<p><a href="https://angular.io/cli">angular-cli</a> provides an amazing tooling for scaffolding, building, testing and deploying Angular applications. However, when you want to perform additional tasks like the following, the tooling is not enough:</p>
+<ul>
+<li>Linting SCSS, HTML</li>
+<li>Format with Prettier</li>
+<li>Commit message linting</li>
+<li>Pre-commit hooks</li>
+<li>Mock server</li>
+<li>Translations</li>
+<li>Configuration management</li>
+<li>Logging</li>
+</ul>
+<p>In this article, we will see how to add these features to an Angular application created with angular-cli.</p>
+<h2 id="scaffold-base-angular">Scaffold base angular<a class="headerlink" href="#scaffold-base-angular" title="Permanent link">&para;</a></h2>
+<p>Generate the base Angular application with the following command:</p>
+<div class="highlight"><pre><span></span><code>ng new [my-app] --package-manager=yarn --style=scss --routing=true --ssr=false
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Read more</p>
+<p>More about this command in the <a href="https://angular.io/cli/new">official documentation</a>.</p>
+</div>
+<h2 id="angular-eslint">Angular ESLint<a class="headerlink" href="#angular-eslint" title="Permanent link">&para;</a></h2>
+<p>Add ESLint dependency to the project with the following command:</p>
+<div class="highlight"><pre><span></span><code>ng add @angular-eslint/schematics
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Read more</p>
+<p>More about this command in the <a href="https://github.com/angular-eslint/angular-eslint">official documentation</a>.</p>
+</div>
+<h2 id="lint-scss">Lint SCSS<a class="headerlink" href="#lint-scss" title="Permanent link">&para;</a></h2>
+<p>Add SCSS linting dependencies to the project with the following command:</p>
+<div class="highlight"><pre><span></span><code>yarn add -D stylelint stylelint-config-sass-guidelines stylelint-scss
+</code></pre></div>
+<p>Add the configuration in <code>.lint/.stylelintrc.json</code>:</p>
+<div class="highlight"><span class="filename">.lint/.stylelintrc.json</span><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;extends&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;stylelint-config-sass-guidelines&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;plugins&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;stylelint-scss&quot;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;rules&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;color-hex-length&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;long&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;selector-pseudo-element-no-unknown&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;ignorePseudoElements&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">          </span><span class="s2">&quot;ng-deep&quot;</span>
+<span class="w">        </span><span class="p">]</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Add the script in <code>package.json</code>:</p>
+<div class="highlight"><span class="filename">package.json</span><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;scripts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;lint:styles&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;stylelint --config .lint/.stylelintrc.json src/app/**/*.scss&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="lint-html">Lint HTML<a class="headerlink" href="#lint-html" title="Permanent link">&para;</a></h2>
+<p>Add HTML linting dependency to the project with the following command:</p>
+<div class="highlight"><pre><span></span><code>yarn add -D htmlhint
+</code></pre></div>
+<p>Add the configuration in <code>.lint/.htmlhintrc</code>:</p>
+<div class="highlight"><span class="filename">.lint/.htmlhintrc</span><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;tagname-lowercase&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;attr-lowercase&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;attr-value-double-quotes&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;attr-value-not-empty&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;attr-no-duplication&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;doctype-first&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;tag-pair&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;tag-self-close&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;spec-char-escape&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;id-unique&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;src-not-empty&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;title-require&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;alt-require&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;doctype-html5&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;id-class-value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;dash&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;style-disabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;inline-style-disabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;inline-script-disabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;space-tab-mixed-disabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;space&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;id-class-ad-disabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;href-abs-or-rel&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;attr-unsafe-chars&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Add the script in <code>package.json</code>:</p>
+<div class="highlight"><span class="filename">package.json</span><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;scripts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;lint:html&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;htmlhint --config .lint/.htmlhintrc src/app/**/*.html&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="update-ng-lint-script">Update ng lint script<a class="headerlink" href="#update-ng-lint-script" title="Permanent link">&para;</a></h2>
+<div class="highlight"><span class="filename">package.json</span><pre><span></span><code>{
+<span class="w"> </span> &quot;scripts&quot;: {
+<span class="gd">-   &quot;lint&quot;: &quot;ng lint&quot;</span>
+<span class="gi">+   &quot;lint:ng&quot;: &quot;ng lint&quot;</span>
+<span class="w"> </span> }
+}
+</code></pre></div>
+<h2 id="run-all-linters">Run all linters<a class="headerlink" href="#run-all-linters" title="Permanent link">&para;</a></h2>
+<p>In order to run all linters we need a dependency npm-run-all. Add the following dependency to the project with the following command:</p>
+<div class="highlight"><pre><span></span><code>yarn<span class="w"> </span>add<span class="w"> </span>-D<span class="w"> </span>npm-run-all
+</code></pre></div>
+<p>Add the script in <code>package.json</code>:</p>
+<div class="highlight"><span class="filename">package.json</span><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;scripts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;lint&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;npm-run-all --parallel lint:ng lint:styles lint:html&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="format-with-prettier">Format with Prettier<a class="headerlink" href="#format-with-prettier" title="Permanent link">&para;</a></h2>
+<p>Add Prettier dependencies to the project with the following command:</p>
+<div class="highlight"><pre><span></span><code>yarn add -D prettier pretty-quick
+</code></pre></div>
+<p>Add the configuration in <code>.prettierrc</code>:</p>
+<div class="highlight"><span class="filename">.prettierrc</span><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;printWidth&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">120</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;tabWidth&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;useTabs&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;semi&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;singleQuote&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;bracketSpacing&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>If you wish to ignore some files, add the configuration in <code>.prettierignore</code>:</p>
+<div class="highlight"><span class="filename">.prettierignore</span><pre><span></span><code>package.json
+package-lock.json
+yarn
+yarn.error.log
+</code></pre></div>
+<h2 id="format-staged-files">Format staged files<a class="headerlink" href="#format-staged-files" title="Permanent link">&para;</a></h2>
+<p>Add lint-staged dependency to the project with the following command:</p>
+<div class="highlight"><pre><span></span><code>yarn add -D lint-staged
+</code></pre></div>
+<p>Add the configuration in <code>.lintstagedrc.json</code>:</p>
+<div class="highlight"><span class="filename">.lintstagedrc.json</span><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;**/*.{ts,js}&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;eslint --cache --fix&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;*&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;prettier --cache --ignore-unknown --write&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>For formatting and linting together add the script in <code>package.json</code>:</p>
+<div class="highlight"><span class="filename">package.json</span><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;scripts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;format:prettier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;lint-staged&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;format:all&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;run-s format:prettier lint&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="commit-message-linting">Commit message linting<a class="headerlink" href="#commit-message-linting" title="Permanent link">&para;</a></h2>
+<p>Add commitlint dependencies to the project with the following command:</p>
+<div class="highlight"><pre><span></span><code>yarn add -D @commitlint/{config-conventional,cli}
+</code></pre></div>
+<p>Add the configuration in <code>commitlint.config.js</code>:</p>
+<div class="highlight"><span class="filename">commitlint.config.js</span><pre><span></span><code><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="k">extends</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;@commitlint/config-conventional&#39;</span><span class="p">]};</span>
+</code></pre></div>
+<h2 id="pre-commit-hooks">Pre-commit hooks<a class="headerlink" href="#pre-commit-hooks" title="Permanent link">&para;</a></h2>
+<p>Add husky dependency to the project with the following command:</p>
+<div class="highlight"><pre><span></span><code>yarn add -D husky
+</code></pre></div>
+<p>Initialize husky with the following command:</p>
+<div class="highlight"><pre><span></span><code>npx husky install
+</code></pre></div>
+<p>Update pre-commit hooks with the following command:</p>
+<div class="highlight"><pre><span></span><code>npx husky add .husky/pre-commit &quot;yarn format:all&quot;
+</code></pre></div>
+<p>Update pre-push hooks with the following command:</p>
+<div class="highlight"><pre><span></span><code>npx husky add .husky/pre-push &quot;yarn test&quot;
+</code></pre></div>
+<p>Update commit-msg hooks with the following command:</p>
+<div class="highlight"><pre><span></span><code>npx husky add .husky/commit-msg &quot;yarn commitlint --edit $1&quot;
+</code></pre></div>
+<p>Update the scripts in <code>package.json</code> for initializing husky:</p>
+<div class="highlight"><span class="filename">package.json</span><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;scripts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;prepare&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;husky install&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="mock-server">Mock server<a class="headerlink" href="#mock-server" title="Permanent link">&para;</a></h2>
+<p>Add json-server dependency to the project with the following command:</p>
+<div class="highlight"><pre><span></span><code>yarn add -D json-server
+</code></pre></div>
 
               
             </article>
