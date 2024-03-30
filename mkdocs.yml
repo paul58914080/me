@@ -93,6 +93,6 @@ nav:
       - Gradle: 'pages/tools/gradle/index.md'
       - Node: 'pages/tools/node/index.md'
       - Yarn: 'pages/tools/yarn/index.md'
-      - SDK: 'pages/tools/sdk/index.md'
+      - SDKMAN: 'pages/tools/sdkman/index.md'
   - Tips & Tricks:
       - IntelliJ: 'pages/tips-and-tricks/intellij/index.md'
