@@ -74,19 +74,25 @@ extra_css:
 nav:
   - About me: 'index.md'
   - Frontend:
-      - Scaffold angular: 'pages/frontend/angular/index.md'
-      - Testing angular: 'pages/frontend/angular/testing/index.md'
+      - Scaffold angular: 'pages/frontend/scaffold-angular/index.md'
+      - Testing angular: 'pages/frontend/testing-angular/index.md'
       - RxJS: 'pages/frontend/rxjs/index.md'
       - Micro frontend: 'pages/frontend/micro-frontend/index.md'
   - Backend:
       - Hexagonal architecture: 'pages/backend/hexagonal-architecture/index.md'
+      - Scaffold hexagon spring-boot: 'pages/backend/scaffold-hexagon-spring-boot/index.md'
   - DevOps:
       - Docker: 'pages/devops/docker/index.md'
-      - Jenkins: 'pages/devops/jenkins/index.md'
+      - Github actions: 'pages/devops/github-actions/index.md'
   - Mac:
-      - Mac: 'pages/mac/index.md'
+      - Homebrew: 'pages/mac/homebrew/index.md'
   - Tools:
       - Git: 'pages/tools/git/index.md'
-      - Markdown: 'pages/tools/markdown/index.md'
+      - Java: 'pages/tools/java/index.md'
+      - Maven: 'pages/tools/maven/index.md'
+      - Gradle: 'pages/tools/gradle/index.md'
+      - Node: 'pages/tools/node/index.md'
+      - Yarn: 'pages/tools/yarn/index.md'
+      - SDK: 'pages/tools/sdk/index.md'
   - Tips & Tricks:
-      - IntelliJ IDEA: 'pages/tips-and-tricks/intellij-idea/index.md'
+      - IntelliJ: 'pages/tips-and-tricks/intellij/index.md'
