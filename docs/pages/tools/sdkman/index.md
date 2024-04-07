@@ -125,3 +125,7 @@ To open the home location of a package
 ```
 sdk home [package]
 ```
+
+## References
+
+- [SDKMAN! Documentation](https://sdkman.io/)
