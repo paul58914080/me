@@ -88,11 +88,11 @@ nav:
       - Homebrew: 'pages/mac/homebrew/index.md'
   - Tools:
       - Git: 'pages/tools/git/index.md'
-      - Java: 'pages/tools/java/index.md'
+      - SDKMAN: 'pages/tools/sdkman/index.md'
+      - JDK: 'pages/tools/JDK/index.md'
       - Maven: 'pages/tools/maven/index.md'
       - Gradle: 'pages/tools/gradle/index.md'
       - Node: 'pages/tools/node/index.md'
       - Yarn: 'pages/tools/yarn/index.md'
-      - SDKMAN: 'pages/tools/sdkman/index.md'
   - Tips & Tricks:
       - IntelliJ: 'pages/tips-and-tricks/intellij/index.md'
