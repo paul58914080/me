@@ -14,7 +14,7 @@
     
     
       
-        <title>Java - Paul WILLIAMS</title>
+        <title>Index - Paul WILLIAMS</title>
       
     
     
@@ -69,6 +69,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#install" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -100,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Java
+              Index
             
           </span>
         </div>
@@ -248,15 +253,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../git/" class="md-tabs__link md-tabs__link--active">
+      <a href="../git/" class="md-tabs__link">
         Tools
       </a>
     </li>
@@ -612,14 +615,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" data-md-state="indeterminate" type="checkbox" id="__nav_6" checked>
       
       
       
@@ -654,19 +655,25 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        Java
+    <li class="md-nav__item">
+      <a href="../sdkman/" class="md-nav__link">
+        SDKMAN
       </a>
-      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../JDK/index.md" class="md-nav__link">
+        JDK
+      </a>
     </li>
   
 
@@ -722,20 +729,6 @@
     <li class="md-nav__item">
       <a href="../yarn/" class="md-nav__link">
         Yarn
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../sdkman/" class="md-nav__link">
-        SDKMAN
       </a>
     </li>
   
@@ -814,6 +807,41 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install" class="md-nav__link">
+    Install
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#certificates" class="md-nav__link">
+    Certificates
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -826,9 +854,21 @@
                 
 
 
-  <h1>Java</h1>
+  <h1>Index</h1>
 
-<p>Coming soon</p>
+<h2 id="install">Install<a class="headerlink" href="#install" title="Permanent link">&para;</a></h2>
+<p>Install <strong>Java</strong> using <a href="../sdkman/">SDKMAN</a> with the following command:</p>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sdk<span class="w"> </span>install<span class="w"> </span>java<span class="w"> </span><span class="m">21</span>.0.2-tem
+</span></code></pre></div>
+<h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
+<h3 id="certificates">Certificates<a class="headerlink" href="#certificates" title="Permanent link">&para;</a></h3>
+<p>To list the certificates in the keystore, use the following command:</p>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>keytool<span class="w"> </span>-list<span class="w"> </span>-keystore<span class="w"> </span><span class="o">[</span>keystore<span class="o">]</span><span class="w"> </span>-storepass<span class="w"> </span><span class="o">[</span>storepass<span class="o">]</span>
+</span></code></pre></div>
+<p>To add a certificate to the keystore, use the following command:</p>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>keytool<span class="w"> </span>-import<span class="w"> </span>-alias<span class="w"> </span><span class="o">[</span>alias<span class="o">]</span><span class="w"> </span>-keystore<span class="w"> </span><span class="o">[</span>keystore<span class="o">]</span><span class="w"> </span><span class="se">\ </span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">        </span>-storepass<span class="w"> </span><span class="o">[</span>storepass<span class="o">]</span><span class="w"> </span>-file<span class="w"> </span><span class="o">[</span>certificate<span class="o">]</span>
+</span></code></pre></div>
 
               
             </article>
