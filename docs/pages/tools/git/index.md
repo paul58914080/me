@@ -248,11 +248,28 @@ git reset [commitId] --hard && git push --force
 ???info "Read more"
     [Simon Dosda's Post](https://simondosda.github.io/posts/2022-01-04-git-reset.html)
 
-#### Revert
+If you wish to reset the **`HEAD`** to the **`main`** branch, you can use the following command:
 
 ```shell
-git revert --no-commit [commitId1 commitId2] && git push
+git reset --hard origin/main
 ```
+
+#### Revert
+
+You can use the `revert` command to revert the changes made in a commit. This will create a new commit with the changes reverted. This would be an idle case when you want to keep the git history intact.
+
+The `--no-commit` flag will revert the changes but not commit them. You can then commit the changes and push them to the remote repository.
+
+```shell
+git revert --no-commit [commitId2 commitId1] && git push
+```
+
+Make sure that the order of the commitId is in the reverse order of the commits you want to revert. Otherwise, you will get a conflict.
+
+#### `force` vs `force-with-lease`
+
+- `--force` - This will force push the changes to the remote repository alterting the git history no matter what
+- `--force-with-lease` - This will force push the changes to the remote repository only if the remote branch is in the same state as the local branch. If there are any changes in the remote branch, the push will be rejected.
 
 ## GitHub via SSH
 
