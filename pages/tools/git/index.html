@@ -796,6 +796,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#force-vs-force-with-lease" class="md-nav__link">
+    force vs force-with-lease
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -803,6 +810,20 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#removing-sensitive-data-from-a-repository" class="md-nav__link">
+    Removing sensitive data from a repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-with-feature-branches" class="md-nav__link">
+    Working with feature branches
+  </a>
   
 </li>
       
@@ -1111,6 +1132,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#force-vs-force-with-lease" class="md-nav__link">
+    force vs force-with-lease
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1118,6 +1146,20 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#removing-sensitive-data-from-a-repository" class="md-nav__link">
+    Removing sensitive data from a repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-with-feature-branches" class="md-nav__link">
+    Working with feature branches
+  </a>
   
 </li>
       
@@ -1286,12 +1328,39 @@
 <summary>Read more</summary>
 <p><a href="https://simondosda.github.io/posts/2022-01-04-git-reset.html">Simon Dosda's Post</a></p>
 </details>
+<p>If you wish to reset the <strong><code>HEAD</code></strong> to the <strong><code>main</code></strong> branch, you can use the following command:</p>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>git<span class="w"> </span>reset<span class="w"> </span>--hard<span class="w"> </span>origin/main
+</span></code></pre></div>
 <h4 id="revert">Revert<a class="headerlink" href="#revert" title="Permanent link">&para;</a></h4>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>git<span class="w"> </span>revert<span class="w"> </span>--no-commit<span class="w"> </span><span class="o">[</span>commitId1<span class="w"> </span>commitId2<span class="o">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>push
+<p>You can use the <code>revert</code> command to revert the changes made in a commit. This will create a new commit with the changes reverted. This would be an idle case when you want to keep the git history intact.</p>
+<p>The <code>--no-commit</code> flag will revert the changes but not commit them. You can then commit the changes and push them to the remote repository.</p>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>git<span class="w"> </span>revert<span class="w"> </span>--no-commit<span class="w"> </span><span class="o">[</span>commitId2<span class="w"> </span>commitId1<span class="o">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>push
+</span></code></pre></div>
+<p>Make sure that the order of the commitId is in the reverse order of the commits you want to revert. Otherwise, you will get a conflict.</p>
+<h4 id="force-vs-force-with-lease"><code>force</code> vs <code>force-with-lease</code><a class="headerlink" href="#force-vs-force-with-lease" title="Permanent link">&para;</a></h4>
+<ul>
+<li><code>--force</code> - This will force push the changes to the remote repository alterting the git history no matter what</li>
+<li><code>--force-with-lease</code> - This will force push the changes to the remote repository only if the remote branch is in the same state as the local branch. If there are any changes in the remote branch, the push will be rejected.</li>
+</ul>
+<h2 id="removing-sensitive-data-from-a-repository">Removing sensitive data from a repository<a class="headerlink" href="#removing-sensitive-data-from-a-repository" title="Permanent link">&para;</a></h2>
+<p>It is very important when you work for an organization that you do not leak any sensitive information. If you have accidentally pushed any sensitive information to a repository, you can remove it by referring this <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository">GitHub Documentation</a></p>
+<h2 id="working-with-feature-branches">Working with feature branches<a class="headerlink" href="#working-with-feature-branches" title="Permanent link">&para;</a></h2>
+<p>Ideally when working with feature branches you will get into a situtation where you have to merge the changes from the main branch to your feature branch. You can do this by:</p>
+<ol>
+<li><strong>Merge</strong> - This will merge the changes from the main branch to your feature branch and create a new commit</li>
+<li><strong>Rebase with fast forward</strong> - This will rebase the changes from the main branch to your feature branch and not create a new commit. This will make the git history linear</li>
+<li><strong>Squash</strong> - This will squash all the commits from the main branch to your feature branch into a single commit. Note this will create a new commit. We would use this when you want to keep all the changes together in a single commit.</li>
+</ol>
+<details class="info">
+<summary>Read more</summary>
+<p>Checkout this video by <a href="https://www.youtube.com/watch?v=0chZFIZLR_0">ByteByteGo on Git MERGE vs REBASE</a></p>
+</details>
+<p>When you rebase, you might encounter merge conflicts and these conflicts can re-appear even after you resolve them. This is because the changes are being applied on top of the changes from the main branch. You can remember the merge changes by setting up the git configuration as follows:</p>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>rerere.enabled<span class="w"> </span><span class="nb">true</span>
 </span></code></pre></div>
 <h2 id="github-via-ssh">GitHub via SSH<a class="headerlink" href="#github-via-ssh" title="Permanent link">&para;</a></h2>
 <p><a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key">Generate a new SSH key</a></p>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>ed25519<span class="w"> </span>-C<span class="w"> </span><span class="s2">&quot;[EMAIL ID]&quot;</span>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>ed25519<span class="w"> </span>-C<span class="w"> </span><span class="s2">&quot;[EMAIL ID]&quot;</span>
 </span></code></pre></div>
 <p><a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#adding-a-new-ssh-key-to-your-account">Add SSH key to your GitHub account</a></p>
 <h2 id="cheat-sheet">Cheat Sheet<a class="headerlink" href="#cheat-sheet" title="Permanent link">&para;</a></h2>

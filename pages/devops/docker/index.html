@@ -69,6 +69,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#docker-commands" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -539,9 +544,142 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Docker
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Docker
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#docker-commands" class="md-nav__link">
+    Docker commands
+  </a>
+  
+    <nav class="md-nav" aria-label="Docker commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-a-container" class="md-nav__link">
+    Run a container
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-all-containers" class="md-nav__link">
+    List all containers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-all-images" class="md-nav__link">
+    List all images
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restart-a-running-container" class="md-nav__link">
+    Restart a running container
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-a-stopped-container" class="md-nav__link">
+    Start a stopped container
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stop-a-container" class="md-nav__link">
+    Stop a container
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-a-container" class="md-nav__link">
+    Remove a container
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-all-stopped-containers" class="md-nav__link">
+    Remove all stopped containers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-an-image" class="md-nav__link">
+    Remove an image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-all-containers" class="md-nav__link">
+    Remove all containers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-all-images" class="md-nav__link">
+    Remove all images
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retrieve-logs-from-a-container" class="md-nav__link">
+    Retrieve logs from a container
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#executing-commands-in-a-running-container" class="md-nav__link">
+    Executing commands in a running container
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-an-image-from-a-dockerfile" class="md-nav__link">
+    Create an image from a Dockerfile
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -814,6 +952,125 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#docker-commands" class="md-nav__link">
+    Docker commands
+  </a>
+  
+    <nav class="md-nav" aria-label="Docker commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-a-container" class="md-nav__link">
+    Run a container
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-all-containers" class="md-nav__link">
+    List all containers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-all-images" class="md-nav__link">
+    List all images
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restart-a-running-container" class="md-nav__link">
+    Restart a running container
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-a-stopped-container" class="md-nav__link">
+    Start a stopped container
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stop-a-container" class="md-nav__link">
+    Stop a container
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-a-container" class="md-nav__link">
+    Remove a container
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-all-stopped-containers" class="md-nav__link">
+    Remove all stopped containers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-an-image" class="md-nav__link">
+    Remove an image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-all-containers" class="md-nav__link">
+    Remove all containers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-all-images" class="md-nav__link">
+    Remove all images
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retrieve-logs-from-a-container" class="md-nav__link">
+    Retrieve logs from a container
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#executing-commands-in-a-running-container" class="md-nav__link">
+    Executing commands in a running container
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-an-image-from-a-dockerfile" class="md-nav__link">
+    Create an image from a Dockerfile
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -828,7 +1085,62 @@
 
   <h1>Docker</h1>
 
-<p>Coming soon</p>
+<p>Docker is a platform for developing, shipping, and running applications in containers. Containers allow a developer to package up an application with all parts it needs, such as libraries and other dependencies, and ship it all out as one package. By doing so, the developer can be sure that the application will run on any other Linux machine regardless of any customized settings that machine might have that could differ from the machine used for writing and testing the code.</p>
+<h2 id="docker-commands">Docker commands<a class="headerlink" href="#docker-commands" title="Permanent link">&para;</a></h2>
+<h3 id="run-a-container">Run a container<a class="headerlink" href="#run-a-container" title="Permanent link">&para;</a></h3>
+<p>It is used to create and start a container. It is like <code>docker create {imageId}</code> + <code>docker start -a {containerId}</code>.</p>
+<blockquote>
+<p><code>-a</code> is used to attach the standard input, output, and error streams to the terminal.</p>
+</blockquote>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>docker<span class="w"> </span>run<span class="w"> </span><span class="o">{</span>imageId<span class="o">}</span>
+</span></code></pre></div>
+<h3 id="list-all-containers">List all containers<a class="headerlink" href="#list-all-containers" title="Permanent link">&para;</a></h3>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>docker<span class="w"> </span>ps<span class="w"> </span>--all
+</span></code></pre></div>
+<h3 id="list-all-images">List all images<a class="headerlink" href="#list-all-images" title="Permanent link">&para;</a></h3>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>docker<span class="w"> </span>images
+</span></code></pre></div>
+<h3 id="restart-a-running-container">Restart a running container<a class="headerlink" href="#restart-a-running-container" title="Permanent link">&para;</a></h3>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>docker<span class="w"> </span>restart<span class="w"> </span><span class="o">{</span>containerId<span class="o">}</span>
+</span></code></pre></div>
+<h3 id="start-a-stopped-container">Start a stopped container<a class="headerlink" href="#start-a-stopped-container" title="Permanent link">&para;</a></h3>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>docker<span class="w"> </span>start<span class="w"> </span><span class="o">{</span>containerId<span class="o">}</span>
+</span></code></pre></div>
+<h3 id="stop-a-container">Stop a container<a class="headerlink" href="#stop-a-container" title="Permanent link">&para;</a></h3>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>docker<span class="w"> </span>stop<span class="w"> </span><span class="o">{</span>containerId<span class="o">}</span><span class="w"> </span><span class="c1">#SIGTERM</span>
+</span></code></pre></div>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>docker<span class="w"> </span><span class="nb">kill</span><span class="w"> </span><span class="o">{</span>containerId<span class="o">}</span><span class="w"> </span><span class="c1">#SIGKILL</span>
+</span></code></pre></div>
+<p><code>kill</code> sends a <code>SIGKILL</code> signal to the container, which immediately terminates the container. <code>stop</code> sends a <code>SIGTERM</code> signal to the container, which allows the container to exit gracefully by waiting for about 10 seconds and if it still does not stop then it sends a <code>SIGKILL</code> signal.</p>
+<h3 id="remove-a-container">Remove a container<a class="headerlink" href="#remove-a-container" title="Permanent link">&para;</a></h3>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>docker<span class="w"> </span>rm<span class="w"> </span><span class="o">{</span>containerId<span class="o">}</span>
+</span></code></pre></div>
+<h3 id="remove-all-stopped-containers">Remove all stopped containers<a class="headerlink" href="#remove-all-stopped-containers" title="Permanent link">&para;</a></h3>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>docker<span class="w"> </span>system<span class="w"> </span>prune
+</span></code></pre></div>
+<h3 id="remove-an-image">Remove an image<a class="headerlink" href="#remove-an-image" title="Permanent link">&para;</a></h3>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>docker<span class="w"> </span>rmi<span class="w"> </span><span class="o">{</span>imageId<span class="o">}</span>
+</span></code></pre></div>
+<h3 id="remove-all-containers">Remove all containers<a class="headerlink" href="#remove-all-containers" title="Permanent link">&para;</a></h3>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>docker<span class="w"> </span>container<span class="w"> </span>rm<span class="w"> </span><span class="k">$(</span>docker<span class="w"> </span>ps<span class="w"> </span>-a<span class="w"> </span>-q<span class="k">)</span>
+</span></code></pre></div>
+<h3 id="remove-all-images">Remove all images<a class="headerlink" href="#remove-all-images" title="Permanent link">&para;</a></h3>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>docker<span class="w"> </span>image<span class="w"> </span>rmi<span class="w"> </span><span class="k">$(</span>docker<span class="w"> </span>images<span class="w"> </span>-q<span class="k">)</span>
+</span></code></pre></div>
+<h3 id="retrieve-logs-from-a-container">Retrieve logs from a container<a class="headerlink" href="#retrieve-logs-from-a-container" title="Permanent link">&para;</a></h3>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>docker<span class="w"> </span>logs<span class="w"> </span><span class="o">{</span>containerId<span class="o">}</span>
+</span></code></pre></div>
+<h3 id="executing-commands-in-a-running-container">Executing commands in a running container<a class="headerlink" href="#executing-commands-in-a-running-container" title="Permanent link">&para;</a></h3>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span><span class="o">{</span>containerId<span class="o">}</span><span class="w"> </span><span class="o">{</span>command<span class="o">}</span>
+</span></code></pre></div>
+<ul>
+<li><code>-i</code> is used to keep the standard input open i.e. stdin.</li>
+<li><code>-t</code> is used to allocate a pseudo-tty to container's stdout and stderr.</li>
+<li><code>{command}</code> is the command to be executed in the container.</li>
+</ul>
+<h3 id="create-an-image-from-a-dockerfile">Create an image from a Dockerfile<a class="headerlink" href="#create-an-image-from-a-dockerfile" title="Permanent link">&para;</a></h3>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span><span class="o">{</span>imageName<span class="o">}</span><span class="w"> </span><span class="o">{</span>path<span class="o">}</span>
+</span></code></pre></div>
 
               
             </article>
