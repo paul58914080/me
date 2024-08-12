@@ -275,6 +275,24 @@ Make sure that the order of the commitId is in the reverse order of the commits 
 
 It is very important when you work for an organization that you do not leak any sensitive information. If you have accidentally pushed any sensitive information to a repository, you can remove it by referring this [GitHub Documentation](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)
 
+## Working with feature branches
+
+Ideally when working with feature branches you will get into a situtation where you have to merge the changes from the main branch to your feature branch. You can do this by:
+
+1. **Merge** - This will merge the changes from the main branch to your feature branch and create a new commit
+2. **Rebase with fast forward** - This will rebase the changes from the main branch to your feature branch and not create a new commit. This will make the git history linear
+3. **Squash** - This will squash all the commits from the main branch to your feature branch into a single commit. Note this will create a new commit. We would use this when you want to keep all the changes together in a single commit.
+
+???info "Read more"
+    Checkout this video by [ByteByteGo on Git MERGE vs REBASE](https://www.youtube.com/watch?v=0chZFIZLR_0)
+
+When you rebase, you might encounter merge conflicts and these conflicts can re-appear even after you resolve them. This is because the changes are being applied on top of the changes from the main branch. You can remember the merge changes by setting up the git configuration as follows:
+
+```shell
+git config --global rerere.enabled true
+```
+
+
 ## GitHub via SSH
 
 [Generate a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key)
