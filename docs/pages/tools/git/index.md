@@ -271,6 +271,10 @@ Make sure that the order of the commitId is in the reverse order of the commits 
 - `--force` - This will force push the changes to the remote repository alterting the git history no matter what
 - `--force-with-lease` - This will force push the changes to the remote repository only if the remote branch is in the same state as the local branch. If there are any changes in the remote branch, the push will be rejected.
 
+## Removing sensitive data from a repository
+
+It is very important when you work for an organization that you do not leak any sensitive information. If you have accidentally pushed any sensitive information to a repository, you can remove it by referring this [GitHub Documentation](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)
+
 ## GitHub via SSH
 
 [Generate a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key)
