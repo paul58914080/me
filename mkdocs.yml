@@ -50,6 +50,7 @@ markdown_extensions:
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
+  - pymdownx.snippets
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.smartsymbols
@@ -67,9 +68,11 @@ markdown_extensions:
       auto_append:
         - abbreviations.md
 extra_css:
-  - stylesheets/extra.min.css
   - stylesheets/bootstrap-grid.min.css
   - stylesheets/skills.css
+  - stylesheets/custom.min.css
+  - stylesheets/main.min.css
+  - stylesheets/palette.min.css
 
 nav:
   - About me: 'index.md'
@@ -83,6 +86,7 @@ nav:
       - Scaffold hexagon spring-boot: 'pages/backend/scaffold-hexagon-spring-boot/index.md'
   - DevOps:
       - Docker: 'pages/devops/docker/index.md'
+      - Distroless images: 'pages/devops/distroless-images/index.md'
       - Github actions: 'pages/devops/github-actions/index.md'
   - Mac:
       - Homebrew: 'pages/mac/homebrew/index.md'
