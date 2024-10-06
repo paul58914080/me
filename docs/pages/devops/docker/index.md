@@ -2,6 +2,12 @@ Docker is a platform for developing, shipping, and running applications in conta
 
 ## Docker commands
 
+### Create an image from a Dockerfile
+
+```shell
+docker build -t {imageName} -f {path}
+```
+
 ### Run a container
 
 It is used to create and start a container. It is like `docker create {imageId}` + `docker start -a {containerId}`.
@@ -11,6 +17,16 @@ It is used to create and start a container. It is like `docker create {imageId}`
 ```shell
 docker run {imageId}
 ```
+
+### Executing commands in a running container
+
+```shell
+docker exec -it {containerId} {command}
+```
+
+- `-i` is used to keep the standard input open i.e. stdin.
+- `-t` is used to allocate a pseudo-tty to container's stdout and stderr.
+- `{command}` is the command to be executed in the container.
 
 ### List all containers
 
@@ -82,20 +98,4 @@ docker image rmi $(docker images -q)
 
 ```shell
 docker logs {containerId}
-```
-
-### Executing commands in a running container
-
-```shell
-docker exec -it {containerId} {command}
-```
-
-- `-i` is used to keep the standard input open i.e. stdin.
-- `-t` is used to allocate a pseudo-tty to container's stdout and stderr.
-- `{command}` is the command to be executed in the container.
-
-### Create an image from a Dockerfile
-
-```shell
-docker build -t {imageName} {path}
 ```
