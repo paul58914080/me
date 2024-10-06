@@ -117,3 +117,48 @@ To display the new versions of the plugins in a project, run the following comma
 mvnw versions:display-plugin-updates
 ```
 
+## Tips & tricks
+
+### Skip tests
+
+To skip the tests during the build, run the following command:
+
+```shell
+mvnw clean install -DskipTests
+```
+
+### Reduce verbosity
+
+To reduce the verbosity of the Maven output, run the following command:
+
+```shell
+mvnw clean install -q
+```
+
+Sometimes you may notice output like this:
+
+```
+Downloading: http://.../artifactory/repo/com/codahale/metrics/metrics-core/3.0.1/metrics-core-3.0.1.jar
+4/2122 KB   
+8/2122 KB   
+12/2122 KB   
+16/2122 KB   
+18/2122 KB   
+18/2122 KB   4/480 KB   
+18/2122 KB   8/480 KB   
+18/2122 KB   12/480 KB   
+18/2122 KB   16/480 KB   
+18/2122 KB   16/480 KB   4/1181 KB   
+18/2122 KB   16/480 KB   8/1181 KB   
+18/2122 KB   16/480 KB   12/1181 KB
+```
+
+To reduce the verbosity of the download progress, run the following command:
+
+```shell
+mvnw clean install -ntp
+```
+
+```shell
+mvnw clean install --no-transfer-progress
+```
