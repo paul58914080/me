@@ -14,7 +14,7 @@
     
     
       
-        <title>Docker - Paul WILLIAMS</title>
+        <title>Distroless images - Paul WILLIAMS</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#docker-commands" class="md-skip">
+        <a href="#building-distroless-image" class="md-skip">
           Skip to content
         </a>
       
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Docker
+              Distroless images
             
           </span>
         </div>
@@ -229,7 +229,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../docker/" class="md-tabs__link md-tabs__link--active">
         DevOps
       </a>
     </li>
@@ -535,6 +535,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../docker/" class="md-nav__link">
+        Docker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -545,12 +559,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Docker
+          Distroless images
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Docker
+        Distroless images
       </a>
       
         
@@ -567,107 +581,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#docker-commands" class="md-nav__link">
-    Docker commands
+  <a href="#building-distroless-image" class="md-nav__link">
+    Building distroless image
   </a>
   
-    <nav class="md-nav" aria-label="Docker commands">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-certificates-to-a-distroless-image" class="md-nav__link">
+    Adding certificates to a distroless image
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debugging-a-distroless-image" class="md-nav__link">
+    Debugging a distroless image
+  </a>
+  
+    <nav class="md-nav" aria-label="Debugging a distroless image">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#run-a-container" class="md-nav__link">
-    Run a container
+  <a href="#debugging-a-distroless-image-using-ephemeral-containers" class="md-nav__link">
+    Debugging a distroless image using ephemeral containers
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#list-all-containers" class="md-nav__link">
-    List all containers
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#list-all-images" class="md-nav__link">
-    List all images
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#restart-a-running-container" class="md-nav__link">
-    Restart a running container
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#start-a-stopped-container" class="md-nav__link">
-    Start a stopped container
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#stop-a-container" class="md-nav__link">
-    Stop a container
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#remove-a-container" class="md-nav__link">
-    Remove a container
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#remove-all-stopped-containers" class="md-nav__link">
-    Remove all stopped containers
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#remove-an-image" class="md-nav__link">
-    Remove an image
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#remove-all-containers" class="md-nav__link">
-    Remove all containers
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#remove-all-images" class="md-nav__link">
-    Remove all images
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#retrieve-logs-from-a-container" class="md-nav__link">
-    Retrieve logs from a container
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#executing-commands-in-a-running-container" class="md-nav__link">
-    Executing commands in a running container
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-an-image-from-a-dockerfile" class="md-nav__link">
-    Create an image from a Dockerfile
+  <a href="#debugging-a-distroless-image-using-share-processes" class="md-nav__link">
+    Debugging a distroless image using share-processes
   </a>
   
 </li>
@@ -681,20 +625,6 @@
   
 </nav>
       
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../distroless-images/" class="md-nav__link">
-        Distroless images
-      </a>
     </li>
   
 
@@ -973,107 +903,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#docker-commands" class="md-nav__link">
-    Docker commands
+  <a href="#building-distroless-image" class="md-nav__link">
+    Building distroless image
   </a>
   
-    <nav class="md-nav" aria-label="Docker commands">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-certificates-to-a-distroless-image" class="md-nav__link">
+    Adding certificates to a distroless image
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debugging-a-distroless-image" class="md-nav__link">
+    Debugging a distroless image
+  </a>
+  
+    <nav class="md-nav" aria-label="Debugging a distroless image">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#run-a-container" class="md-nav__link">
-    Run a container
+  <a href="#debugging-a-distroless-image-using-ephemeral-containers" class="md-nav__link">
+    Debugging a distroless image using ephemeral containers
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#list-all-containers" class="md-nav__link">
-    List all containers
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#list-all-images" class="md-nav__link">
-    List all images
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#restart-a-running-container" class="md-nav__link">
-    Restart a running container
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#start-a-stopped-container" class="md-nav__link">
-    Start a stopped container
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#stop-a-container" class="md-nav__link">
-    Stop a container
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#remove-a-container" class="md-nav__link">
-    Remove a container
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#remove-all-stopped-containers" class="md-nav__link">
-    Remove all stopped containers
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#remove-an-image" class="md-nav__link">
-    Remove an image
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#remove-all-containers" class="md-nav__link">
-    Remove all containers
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#remove-all-images" class="md-nav__link">
-    Remove all images
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#retrieve-logs-from-a-container" class="md-nav__link">
-    Retrieve logs from a container
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#executing-commands-in-a-running-container" class="md-nav__link">
-    Executing commands in a running container
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-an-image-from-a-dockerfile" class="md-nav__link">
-    Create an image from a Dockerfile
+  <a href="#debugging-a-distroless-image-using-share-processes" class="md-nav__link">
+    Debugging a distroless image using share-processes
   </a>
   
 </li>
@@ -1097,64 +957,134 @@
                 
 
 
-  <h1>Docker</h1>
+  <h1>Distroless images</h1>
 
-<p>Docker is a platform for developing, shipping, and running applications in containers. Containers allow a developer to package up an application with all parts it needs, such as libraries and other dependencies, and ship it all out as one package. By doing so, the developer can be sure that the application will run on any other Linux machine regardless of any customized settings that machine might have that could differ from the machine used for writing and testing the code.</p>
-<h2 id="docker-commands">Docker commands<a class="headerlink" href="#docker-commands" title="Permanent link">&para;</a></h2>
-<h3 id="run-a-container">Run a container<a class="headerlink" href="#run-a-container" title="Permanent link">&para;</a></h3>
-<p>It is used to create and start a container. It is like <code>docker create {imageId}</code> + <code>docker start -a {containerId}</code>.</p>
-<blockquote>
-<p><code>-a</code> is used to attach the standard input, output, and error streams to the terminal.</p>
-</blockquote>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>docker<span class="w"> </span>run<span class="w"> </span><span class="o">{</span>imageId<span class="o">}</span>
+<p>Distroless images are minimal docker images that contain only your application and its runtime dependencies. They do not contain os, package managers, shells, or other tools that are typically included in a Linux distribution. This makes distroless images more secure and lightweight than traditional images.</p>
+<p>The name "<strong>distroless</strong>" comes from the fact that these images are "less" than a full Linux distribution. They are designed to be used as base images for containerized applications, providing a clean and secure environment for running your code.</p>
+<p>There is a misconception that distroless images are not suitable for debugging or troubleshooting because they do not contain debugging tools or shells. However, you can still debug a distroless image using ephemeral containers in Kubernetes or other debugging techniques and this has been explained below.</p>
+<p>Distroless images and slim images are similar in that they both aim to reduce the size of the container image by removing unnecessary components. However, slim images still contain an operating system and package manager, while distroless images do not.</p>
+<h2 id="building-distroless-image">Building distroless image<a class="headerlink" href="#building-distroless-image" title="Permanent link">&para;</a></h2>
+<p>Below are few examples of how you can build a distroless image for different types of applications:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Java</label><label for="__tabbed_1_2">NGINX Static</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-Dockerfile highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Dockerfile</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c"># Stage 1: Build the application</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="k">FROM</span><span class="w"> </span><span class="s">maven:3.9-eclipse-temurin-21</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="s">builder</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="k">COPY</span><span class="w"> </span>.<span class="w"> </span>/app
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="k">RUN</span><span class="w"> </span>./mvnw<span class="w"> </span>clean<span class="w"> </span>package
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="c"># Stage 2: Create the distroless image</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="k">FROM</span><span class="w"> </span><span class="s">gcr.io/distroless/java21-debian12</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="k">COPY</span><span class="w"> </span>--from<span class="o">=</span>builder<span class="w"> </span>/app/target/your-spring-boot-app.jar<span class="w"> </span>/app/your-spring-boot-app.jar
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;your-spring-boot-app.jar&quot;</span><span class="p">]</span>
+</span></code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<div class="language-Dockerfile highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Dockerfile</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span>
+<span class="normal"><a href="#__codelineno-1-11">11</a></span>
+<span class="normal"><a href="#__codelineno-1-12">12</a></span>
+<span class="normal"><a href="#__codelineno-1-13">13</a></span>
+<span class="normal"><a href="#__codelineno-1-14">14</a></span>
+<span class="normal"><a href="#__codelineno-1-15">15</a></span>
+<span class="normal"><a href="#__codelineno-1-16">16</a></span>
+<span class="normal"><a href="#__codelineno-1-17">17</a></span>
+<span class="normal"><a href="#__codelineno-1-18">18</a></span>
+<span class="normal"><a href="#__codelineno-1-19">19</a></span>
+<span class="normal"><a href="#__codelineno-1-20">20</a></span>
+<span class="normal"><a href="#__codelineno-1-21">21</a></span>
+<span class="normal"><a href="#__codelineno-1-22">22</a></span>
+<span class="normal"><a href="#__codelineno-1-23">23</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c"># Stage 1: Build nginx from source</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="k">FROM</span><span class="w"> </span><span class="s">alpine:latest</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="s">builder</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="k">RUN</span><span class="w"> </span>apk<span class="w"> </span>add<span class="w"> </span>--no-cache<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">    </span>build-base<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">    </span>pcre-dev<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">    </span>zlib-dev<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">    </span>openssl-dev<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">    </span>wget<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">    </span><span class="o">&amp;&amp;</span><span class="w"> </span>wget<span class="w"> </span>http://nginx.org/download/nginx-1.21.6.tar.gz<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="w">    </span><span class="o">&amp;&amp;</span><span class="w"> </span>tar<span class="w"> </span>-zxvf<span class="w"> </span>nginx-1.21.6.tar.gz<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">    </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>nginx-1.21.6<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="w">    </span><span class="o">&amp;&amp;</span><span class="w"> </span>./configure<span class="w"> </span>--prefix<span class="o">=</span>/nginx<span class="w"> </span>--with-http_ssl_module<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="w">    </span><span class="o">&amp;&amp;</span><span class="w"> </span>make<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="w">    </span><span class="o">&amp;&amp;</span><span class="w"> </span>make<span class="w"> </span>install
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15"></a>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="c"># Stage 2: Create the scratch image</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17"></a><span class="k">FROM</span><span class="w"> </span><span class="s">scratch</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18"></a><span class="k">COPY</span><span class="w"> </span>--from<span class="o">=</span>builder<span class="w"> </span>/nginx<span class="w"> </span>/nginx
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19"></a><span class="k">COPY</span><span class="w"> </span>--from<span class="o">=</span>builder<span class="w"> </span>/nginx/conf<span class="w"> </span>/etc/nginx
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20"></a><span class="k">COPY</span><span class="w"> </span>--from<span class="o">=</span>builder<span class="w"> </span>/nginx/html<span class="w"> </span>/usr/share/nginx/html
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21"></a><span class="k">EXPOSE</span><span class="w"> </span><span class="s">80</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22"></a><span class="k">USER</span><span class="w"> </span><span class="s">1001</span>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23"></a><span class="k">ENTRYPOINT</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;/nginx/sbin/nginx&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;-g&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;daemon off;&quot;</span><span class="p">]</span>
+</span></code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
+<h2 id="adding-certificates-to-a-distroless-image">Adding certificates to a distroless image<a class="headerlink" href="#adding-certificates-to-a-distroless-image" title="Permanent link">&para;</a></h2>
+<p>You can modify the above docker file to add certificates to the distroless image. Here's an example of how to add certificates to a distroless image:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">With builder image</label><label for="__tabbed_2_2">With k8s mounting</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-Dockerfile highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c"># Stage 1: Build the application</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">FROM</span><span class="w"> </span><span class="s">openjdk:11-jre-slim</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="s">builder</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="k">COPY</span><span class="w"> </span>.<span class="w"> </span>/app
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">RUN</span><span class="w"> </span>./mvnw<span class="w"> </span>clean<span class="w"> </span>package<span class="w"> </span>-DskipTests
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c"># Stage 2: Create the distroless image</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="k">FROM</span><span class="w"> </span><span class="s">scratch</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="k">COPY</span><span class="w"> </span>--from<span class="o">=</span>builder<span class="w"> </span>/app/target/your-spring-boot-app.jar<span class="w"> </span>/app/your-spring-boot-app.jar
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="k">COPY</span><span class="w"> </span>--from<span class="o">=</span>gcr.io/distroless/java:11<span class="w"> </span>/usr/lib/jvm/java-11-openjdk/jre<span class="w"> </span>/usr/lib/jvm/java-11-openjdk/jre
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="c"># Add certificates</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="k">COPY</span><span class="w"> </span>path/to/your/certificates<span class="w"> </span>/etc/ssl/certs
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="c"># Import certificates into the Java truststore</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="k">RUN</span><span class="w"> </span><span class="o">[</span><span class="s2">&quot;/usr/lib/jvm/java-11-openjdk/jre/bin/keytool&quot;</span>,<span class="w"> </span><span class="s2">&quot;-import&quot;</span>,<span class="w"> </span><span class="s2">&quot;-trustcacerts&quot;</span>,<span class="w"> </span><span class="s2">&quot;-file&quot;</span>,<span class="w"> </span><span class="s2">&quot;/etc/ssl/certs/your-certificate.crt&quot;</span>,<span class="w"> </span><span class="s2">&quot;-alias&quot;</span>,<span class="w"> </span><span class="s2">&quot;your-cert-alias&quot;</span>,<span class="w"> </span><span class="s2">&quot;-keystore&quot;</span>,<span class="w"> </span><span class="s2">&quot;/usr/lib/jvm/java-11-openjdk/jre/lib/security/cacerts&quot;</span>,<span class="w"> </span><span class="s2">&quot;-storepass&quot;</span>,<span class="w"> </span><span class="s2">&quot;changeit&quot;</span>,<span class="w"> </span><span class="s2">&quot;-noprompt&quot;</span><span class="o">]</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="k">ENTRYPOINT</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;/usr/lib/jvm/java-11-openjdk/jre/bin/java&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;-jar&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;your-spring-boot-app.jar&quot;</span><span class="p">]</span>
 </span></code></pre></div>
-<h3 id="list-all-containers">List all containers<a class="headerlink" href="#list-all-containers" title="Permanent link">&para;</a></h3>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>docker<span class="w"> </span>ps<span class="w"> </span>--all
+</div>
+<div class="tabbed-block">
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="l l-Scalar l-Scalar-Plain">todo</span>
 </span></code></pre></div>
-<h3 id="list-all-images">List all images<a class="headerlink" href="#list-all-images" title="Permanent link">&para;</a></h3>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>docker<span class="w"> </span>images
+</div>
+</div>
+</div>
+<h2 id="debugging-a-distroless-image">Debugging a distroless image<a class="headerlink" href="#debugging-a-distroless-image" title="Permanent link">&para;</a></h2>
+<p>Debugging a distroless image can be challenging because it does not contain debugging tools like shells or package managers. However, you can use ephemeral containers in Kubernetes to debug a running distroless image. Ephemeral containers are temporary containers that can be added to a running pod for debugging purposes. They do not persist after the pod is restarted and do not affect the existing containers in the pod.</p>
+<h3 id="debugging-a-distroless-image-using-ephemeral-containers">Debugging a distroless image using ephemeral containers<a class="headerlink" href="#debugging-a-distroless-image-using-ephemeral-containers" title="Permanent link">&para;</a></h3>
+<p>To debug a distroless image using an ephemeral container, you can use the following command:</p>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>kubectl<span class="w"> </span>debug<span class="w"> </span>-it<span class="w"> </span>&lt;pod-name&gt;<span class="w"> </span>--image<span class="o">=</span>busybox<span class="w"> </span>--target<span class="o">=</span>&lt;container-name&gt;<span class="w"> </span>--<span class="w"> </span>sh
 </span></code></pre></div>
-<h3 id="restart-a-running-container">Restart a running container<a class="headerlink" href="#restart-a-running-container" title="Permanent link">&para;</a></h3>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>docker<span class="w"> </span>restart<span class="w"> </span><span class="o">{</span>containerId<span class="o">}</span>
+<p>The above command adds an ephemeral container to a running pod and allows you to execute commands in the target container for debugging purposes. Replace <code>&lt;pod-name&gt;</code> with the name of the running pod and <code>&lt;container-name&gt;</code> with the name of the target container within the pod.</p>
+<h3 id="debugging-a-distroless-image-using-share-processes">Debugging a distroless image using share-processes<a class="headerlink" href="#debugging-a-distroless-image-using-share-processes" title="Permanent link">&para;</a></h3>
+<p>You can also do it via share-processes:</p>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>kubectl<span class="w"> </span>debug<span class="w"> </span>&lt;podname&gt;<span class="w"> </span>-it<span class="w"> </span>--image<span class="o">=</span>busybox<span class="w"> </span>share-processes<span class="w"> </span>--copy-to<span class="o">=</span>&lt;container-name&gt;<span class="w"> </span>--<span class="w"> </span>sh
 </span></code></pre></div>
-<h3 id="start-a-stopped-container">Start a stopped container<a class="headerlink" href="#start-a-stopped-container" title="Permanent link">&para;</a></h3>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>docker<span class="w"> </span>start<span class="w"> </span><span class="o">{</span>containerId<span class="o">}</span>
-</span></code></pre></div>
-<h3 id="stop-a-container">Stop a container<a class="headerlink" href="#stop-a-container" title="Permanent link">&para;</a></h3>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>docker<span class="w"> </span>stop<span class="w"> </span><span class="o">{</span>containerId<span class="o">}</span><span class="w"> </span><span class="c1">#SIGTERM</span>
-</span></code></pre></div>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>docker<span class="w"> </span><span class="nb">kill</span><span class="w"> </span><span class="o">{</span>containerId<span class="o">}</span><span class="w"> </span><span class="c1">#SIGKILL</span>
-</span></code></pre></div>
-<p><code>kill</code> sends a <code>SIGKILL</code> signal to the container, which immediately terminates the container. <code>stop</code> sends a <code>SIGTERM</code> signal to the container, which allows the container to exit gracefully by waiting for about 10 seconds and if it still does not stop then it sends a <code>SIGKILL</code> signal.</p>
-<h3 id="remove-a-container">Remove a container<a class="headerlink" href="#remove-a-container" title="Permanent link">&para;</a></h3>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>docker<span class="w"> </span>rm<span class="w"> </span><span class="o">{</span>containerId<span class="o">}</span>
-</span></code></pre></div>
-<h3 id="remove-all-stopped-containers">Remove all stopped containers<a class="headerlink" href="#remove-all-stopped-containers" title="Permanent link">&para;</a></h3>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>docker<span class="w"> </span>system<span class="w"> </span>prune
-</span></code></pre></div>
-<h3 id="remove-an-image">Remove an image<a class="headerlink" href="#remove-an-image" title="Permanent link">&para;</a></h3>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>docker<span class="w"> </span>rmi<span class="w"> </span><span class="o">{</span>imageId<span class="o">}</span>
-</span></code></pre></div>
-<h3 id="remove-all-containers">Remove all containers<a class="headerlink" href="#remove-all-containers" title="Permanent link">&para;</a></h3>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>docker<span class="w"> </span>container<span class="w"> </span>rm<span class="w"> </span><span class="k">$(</span>docker<span class="w"> </span>ps<span class="w"> </span>-a<span class="w"> </span>-q<span class="k">)</span>
-</span></code></pre></div>
-<h3 id="remove-all-images">Remove all images<a class="headerlink" href="#remove-all-images" title="Permanent link">&para;</a></h3>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>docker<span class="w"> </span>image<span class="w"> </span>rmi<span class="w"> </span><span class="k">$(</span>docker<span class="w"> </span>images<span class="w"> </span>-q<span class="k">)</span>
-</span></code></pre></div>
-<h3 id="retrieve-logs-from-a-container">Retrieve logs from a container<a class="headerlink" href="#retrieve-logs-from-a-container" title="Permanent link">&para;</a></h3>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>docker<span class="w"> </span>logs<span class="w"> </span><span class="o">{</span>containerId<span class="o">}</span>
-</span></code></pre></div>
-<h3 id="executing-commands-in-a-running-container">Executing commands in a running container<a class="headerlink" href="#executing-commands-in-a-running-container" title="Permanent link">&para;</a></h3>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span><span class="o">{</span>containerId<span class="o">}</span><span class="w"> </span><span class="o">{</span>command<span class="o">}</span>
-</span></code></pre></div>
-<ul>
-<li><code>-i</code> is used to keep the standard input open i.e. stdin.</li>
-<li><code>-t</code> is used to allocate a pseudo-tty to container's stdout and stderr.</li>
-<li><code>{command}</code> is the command to be executed in the container.</li>
-</ul>
-<h3 id="create-an-image-from-a-dockerfile">Create an image from a Dockerfile<a class="headerlink" href="#create-an-image-from-a-dockerfile" title="Permanent link">&para;</a></h3>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span><span class="o">{</span>imageName<span class="o">}</span><span class="w"> </span><span class="o">{</span>path<span class="o">}</span>
-</span></code></pre></div>
+<p>This will allow you to share the processes of the target container and debug it using the busybox container.</p>
 
               
             </article>

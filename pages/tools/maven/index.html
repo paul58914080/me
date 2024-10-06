@@ -549,6 +549,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../devops/distroless-images/" class="md-nav__link">
+        Distroless images
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../devops/github-actions/" class="md-nav__link">
         Github actions
       </a>
@@ -808,6 +822,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#tips-tricks" class="md-nav__link">
+    Tips &amp; tricks
+  </a>
+  
+    <nav class="md-nav" aria-label="Tips &amp; tricks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#skip-tests" class="md-nav__link">
+    Skip tests
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reduce-verbosity" class="md-nav__link">
+    Reduce verbosity
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1027,6 +1068,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#tips-tricks" class="md-nav__link">
+    Tips &amp; tricks
+  </a>
+  
+    <nav class="md-nav" aria-label="Tips &amp; tricks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#skip-tests" class="md-nav__link">
+    Skip tests
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reduce-verbosity" class="md-nav__link">
+    Reduce verbosity
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1105,6 +1173,35 @@
 </span></code></pre></div>
 <p>To display the new versions of the plugins in a project, run the following command:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>mvnw versions:display-plugin-updates
+</span></code></pre></div>
+<h2 id="tips-tricks">Tips &amp; tricks<a class="headerlink" href="#tips-tricks" title="Permanent link">&para;</a></h2>
+<h3 id="skip-tests">Skip tests<a class="headerlink" href="#skip-tests" title="Permanent link">&para;</a></h3>
+<p>To skip the tests during the build, run the following command:</p>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>mvnw<span class="w"> </span>clean<span class="w"> </span>install<span class="w"> </span>-DskipTests
+</span></code></pre></div>
+<h3 id="reduce-verbosity">Reduce verbosity<a class="headerlink" href="#reduce-verbosity" title="Permanent link">&para;</a></h3>
+<p>To reduce the verbosity of the Maven output, run the following command:</p>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>mvnw<span class="w"> </span>clean<span class="w"> </span>install<span class="w"> </span>-q
+</span></code></pre></div>
+<p>Sometimes you may notice output like this:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>Downloading: http://.../artifactory/repo/com/codahale/metrics/metrics-core/3.0.1/metrics-core-3.0.1.jar
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>4/2122 KB   
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>8/2122 KB   
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>12/2122 KB   
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>16/2122 KB   
+</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>18/2122 KB   
+</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>18/2122 KB   4/480 KB   
+</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>18/2122 KB   8/480 KB   
+</span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>18/2122 KB   12/480 KB   
+</span><span id="__span-17-10"><a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a>18/2122 KB   16/480 KB   
+</span><span id="__span-17-11"><a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a>18/2122 KB   16/480 KB   4/1181 KB   
+</span><span id="__span-17-12"><a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a>18/2122 KB   16/480 KB   8/1181 KB   
+</span><span id="__span-17-13"><a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a>18/2122 KB   16/480 KB   12/1181 KB
+</span></code></pre></div>
+<p>To reduce the verbosity of the download progress, run the following command:</p>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>mvnw<span class="w"> </span>clean<span class="w"> </span>install<span class="w"> </span>-ntp
+</span></code></pre></div>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>mvnw<span class="w"> </span>clean<span class="w"> </span>install<span class="w"> </span>--no-transfer-progress
 </span></code></pre></div>
 
               
